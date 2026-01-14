@@ -1,6 +1,5 @@
 // API 基础地址 - 部署后改成你的 Render 地址
-const API_BASE = 'https://psychology-notes-api.onrender.com/api';
-
+const API_BASE = 'https://psychology-journey-api.onrender.com/api';
 // 状态
 let folders = [];
 let notes = [];
