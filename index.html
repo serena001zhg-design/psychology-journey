@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理学笔记</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>🧠 心理学笔记</h1>
+            </div>
+            <div class="folder-list" id="folderList">
+                <!-- 文件夹列表 -->
+            </div>
+            <button class="new-folder-btn" id="newFolderBtn">+ 新建分类</button>
+        </aside>
+
+        <!-- 中间笔记列表 -->
+        <section class="note-list-section">
+            <div class="note-list-header">
+                <h2 id="currentFolderName">选择一个分类</h2>
+                <button class="new-note-btn" id="newNoteBtn">+ 新建笔记</button>
+            </div>
+            <div class="note-list" id="noteList">
+                <!-- 笔记列表 -->
+            </div>
+        </section>
+
+        <!-- 右侧编辑区 -->
+        <main class="editor-section">
+            <div class="editor-container" id="editorContainer">
+                <input type="text" id="noteTitle" placeholder="笔记标题" class="note-title-input">
+                <textarea id="noteContent" placeholder="开始记录你的心理学笔记..." class="note-content-input"></textarea>
+                <div class="editor-actions">
+                    <button class="delete-btn" id="deleteNoteBtn">删除</button>
+                    <button class="save-btn" id="saveNoteBtn">保存</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
